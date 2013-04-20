@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RedGreen' target in the 'RedGreen' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
