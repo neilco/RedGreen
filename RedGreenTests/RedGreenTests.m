@@ -10,23 +10,43 @@
 
 @implementation RedGreenTests
 
-- (void)setUp
+- (void)testBooleanAssertions
 {
-    [super setUp];
-    
-    // Set-up code here.
+    STAssertFalse(true, @"Expected true to be false.");
+    STAssertTrue(false, @"Expected false to be true.");
 }
 
-- (void)tearDown
+- (void)testCanIProvideBetterOutput
 {
-    // Tear-down code here.
-    
-    [super tearDown];
 }
 
-- (void)testExample
+- (void)testDidIProvideBetterOutput
 {
-    STFail(@"Unit tests are not implemented yet in RedGreenTests");
+}
+
+- (void)testEqualityAssertions
+{
+    STAssertEqualObjects(@"a", @"a", @"Expected a to equal a");
+    STAssertEqualObjects(@"(null)", @"Invalid user credentials.", @"Unexpected error messsage.");
+}
+
+- (void)testEstimatesAreEqual
+{
+    STAssertEquals(1, 1, @"");
+}
+
+- (void)testSenTestLogOutput
+{
+    STAssertEquals(1, 1, @"");
+}
+
+- (void)testFails
+{
+    STFail(@"You deliberately called STFail().");
+}
+
+- (void)testSucceeds
+{
 }
 
 @end
