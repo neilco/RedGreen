@@ -5,8 +5,12 @@ Pod::Spec.new do |s|
   s.homepage     = "http://github.com/neilco/RedGreen"
   s.license      = 'MIT (see LICENSE.txt)'
   s.author       = { "Neil Cowburn" => "git@neilcowburn.com" }
-  s.source       = { :git => "https://github.com/neilco/RedGreen.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/neilco/RedGreen.git", :tag => "1.0.1" }
   s.source_files = 'RedGreen', 'RedGreen/SenTestLog+RedGreen.{h,m}'
-  s.frameworks = 'SenTestingKit'
+  s.ios.frameworks = 'SenTestingKit'
+  s.osx.frameworks = 'SenTestingKit'
+  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.7'
   s.requires_arc = true
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 end
