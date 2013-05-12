@@ -1,4 +1,5 @@
 # <span style="color: rgb(225,0,0);">Red</span><span style="color: rgb(0,160,0);">Green</span>
+[![Build Status](https://travis-ci.org/neilco/RedGreen.png)](https://travis-ci.org/neilco/RedGreen)
 
 ## Overview
 
