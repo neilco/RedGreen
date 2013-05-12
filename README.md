@@ -17,7 +17,7 @@ And then, from Terminal, run this:
 
     pod install
 
-Open the workspace. Build. Test. Bacon. 'Cos your sizzlin'.
+Open the workspace. Build. Test. Bacon. 'Cos you're sizzlin'.
 
 ### Standalone
 
