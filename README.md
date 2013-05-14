@@ -83,26 +83,7 @@ __<span style="color: rgb(225,0,0);">Red</span><span style="color: rgb(0,160,0);
 
 We can do better and if we can, we should. __<span style="color: rgb(225,0,0);">Red</span><span style="color: rgb(0,160,0);">Green</span>__ has support for the excellent [XcodeColors](https://github.com/robbiehanson/XcodeColors) plugin, which makes visually parsing the test output a doddle. Now you can find the tests that __<span style="color: rgb(0,160,0);">passed</span>__ __without having to actually read anything__. A quick glance is all that is needed. 
 
-<pre>
-Test Suite '/Users/neil/Code/libs/RedGreen/DerivedData/RedGreen/Build/Products/Debug-iphonesimulator/RedGreenTests.octest(Tests)' started at 2013-05-11 10:33:17 +0000
-Test Suite 'RedGreenTests' started at 2013-05-11 10:33:17 +0000
-<span style="color:rgb(225,0,0);">FAILED: -[RedGreenTests testBooleanAssertions] (0.00037s)
-	Line 15: "true" should be false. Expected true to be false.
-	Line 16: "false" should be true. Expected false to be true.</span>
-<span style="color:rgb(0,160,0);">PASSED: -[RedGreenTests testCanIProvideBetterOutput] (0.00002s)
-PASSED: -[RedGreenTests testDidIProvideBetterOutput] (0.00001s)</span>
-<span style="color:rgb(225,0,0);">FAILED: -[RedGreenTests testEqualityAssertions] (0.00010s)
-	Line 30: '(null)' should be equal to 'Invalid user credentials.' Unexpected error messsage.</span>
-<span style="color:rgb(0,160,0);">PASSED: -[RedGreenTests testEstimatesAreEqual] (0.00005s)</span>
-<span style="color:rgb(225,0,0);">FAILED: -[RedGreenTests testFails] (0.00009s)
-	Line 45: You deliberately called STFail().</span>
-<span style="color:rgb(0,160,0);">PASSED: -[RedGreenTests testSenTestLogOutput] (0.00002s)
-PASSED: -[RedGreenTests testSucceeds] (0.00001s)</span>
-Test Suite 'RedGreenTests' finished at 2013-05-11 10:33:17 +0000.
-Executed 8 tests, with 4 failures (0 unexpected) in 0.001 (0.001) seconds
-Test Suite '/Users/neil/Code/libs/RedGreen/DerivedData/RedGreen/Build/Products/Debug-iphonesimulator/RedGreenTests.octest(Tests)' finished at 2013-05-11 10:33:17 +0000.
-Executed 8 tests, with 4 failures (0 unexpected) in 0.001 (0.002) seconds
-</pre>
+![RedGreen with XcodeColors](assets/rg_and_xc.png)
 
 ## License
 
