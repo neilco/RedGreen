@@ -1,4 +1,4 @@
-->![RedGreen—A new way to view unit test output in Xcode](assets/rdgn_logo.png)<-
+![RedGreen—A new way to view unit test output in Xcode](assets/rdgn_logo.png)
 
 __<span style="color: rgb(225,0,0);">Red</span><span style="color: rgb(0,160,0);">Green</span>__ is an extension library for __SenTestingKit__ that makes the test output easier to parse by humans. 
 
