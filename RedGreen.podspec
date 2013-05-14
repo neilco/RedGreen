@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/neilco/RedGreen.git", :tag => "1.0.1" }
   s.source_files = 'RedGreen', 'RedGreen/SenTestLog+RedGreen.{h,m}'
   s.framework    = 'SenTestingKit'
-  s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
+  s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
+  s.osx.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
   s.requires_arc = true
