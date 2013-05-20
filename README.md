@@ -8,7 +8,7 @@ __<span style="color: rgb(225,0,0);">Red</span><span style="color: rgb(0,160,0);
 
 Add the following to your Podfile:
 
-    pod 'RedGreen", :git => 'https://github.com/neilco/RedGreen.git'
+    pod 'RedGreen', :git => 'https://github.com/neilco/RedGreen.git'
 
 And then, from Terminal, run this:
 
