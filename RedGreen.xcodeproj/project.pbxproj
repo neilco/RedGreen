@@ -11,12 +11,21 @@
 		28A4828D1722CECB0091EB34 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A4828C1722CECB0091EB34 /* SenTestingKit.framework */; };
 		28A482901722CECB0091EB34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A4827D1722CECB0091EB34 /* Foundation.framework */; };
 		28A482931722CECB0091EB34 /* libRedGreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A4827A1722CECB0091EB34 /* libRedGreen.a */; };
-		28A482991722CECB0091EB34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28A482971722CECB0091EB34 /* InfoPlist.strings */; };
 		28A4829C1722CECB0091EB34 /* RedGreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A4829B1722CECB0091EB34 /* RedGreenTests.m */; };
 		28A482A71722CF0D0091EB34 /* SenTestLog+RedGreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A482A61722CF0D0091EB34 /* SenTestLog+RedGreen.m */; };
 		28A482A81722CF910091EB34 /* SenTestLog+RedGreen.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28A482A51722CF0D0091EB34 /* SenTestLog+RedGreen.h */; };
 		28A482A91722CFBC0091EB34 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A4828C1722CECB0091EB34 /* SenTestingKit.framework */; };
 		28A482AB1722CFD00091EB34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A482AA1722CFD00091EB34 /* UIKit.framework */; };
+		7BC195C518006A81000C1919 /* XCTestLog+RedGreen.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BD3F7241800516200E321E3 /* XCTestLog+RedGreen.h */; };
+		7BC195C618006AA2000C1919 /* RedGreenXCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F746180051C500E321E3 /* RedGreenXCTests.m */; };
+		7BD3F73F180051C500E321E3 /* libRedGreenXC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F729180051C400E321E3 /* libRedGreenXC.a */; };
+		7BD3F74F180051FC00E321E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F74E180051FC00E321E3 /* XCTest.framework */; };
+		7BD3F7511800520100E321E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F7501800520100E321E3 /* Foundation.framework */; };
+		7BD3F7531800521900E321E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F7521800521900E321E3 /* Cocoa.framework */; };
+		7BD3F7541800522900E321E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F7521800521900E321E3 /* Cocoa.framework */; };
+		7BD3F7551800522E00E321E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F74E180051FC00E321E3 /* XCTest.framework */; };
+		7BD3F7561800523400E321E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD3F7501800520100E321E3 /* Foundation.framework */; };
+		7BD3F757180052A000E321E3 /* XCTestLog+RedGreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F7221800515000E321E3 /* XCTestLog+RedGreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 28A482791722CECB0091EB34;
 			remoteInfo = RedGreen;
+		};
+		7BD3F73D180051C500E321E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28A482721722CECB0091EB34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD3F728180051C400E321E3;
+			remoteInfo = RedGreenXC;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,22 +56,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BC195C418006A76000C1919 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				7BC195C518006A81000C1919 /* XCTestLog+RedGreen.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		28A4827A1722CECB0091EB34 /* libRedGreen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRedGreen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A4827D1722CECB0091EB34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		28A482811722CECB0091EB34 /* RedGreen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedGreen-Prefix.pch"; sourceTree = "<group>"; };
 		28A4828B1722CECB0091EB34 /* RedGreenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedGreenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A4828C1722CECB0091EB34 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		28A4828E1722CECB0091EB34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		28A482961722CECB0091EB34 /* RedGreenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedGreenTests-Info.plist"; sourceTree = "<group>"; };
-		28A482981722CECB0091EB34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28A4829A1722CECB0091EB34 /* RedGreenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedGreenTests.h; sourceTree = "<group>"; };
 		28A4829B1722CECB0091EB34 /* RedGreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedGreenTests.m; sourceTree = "<group>"; };
 		28A482A51722CF0D0091EB34 /* SenTestLog+RedGreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestLog+RedGreen.h"; sourceTree = "<group>"; };
 		28A482A61722CF0D0091EB34 /* SenTestLog+RedGreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestLog+RedGreen.m"; sourceTree = "<group>"; };
 		28A482AA1722CFD00091EB34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7BD3F7221800515000E321E3 /* XCTestLog+RedGreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCTestLog+RedGreen.m"; path = "RedGreen/XCTestLog+RedGreen.m"; sourceTree = SOURCE_ROOT; };
+		7BD3F7241800516200E321E3 /* XCTestLog+RedGreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCTestLog+RedGreen.h"; path = "RedGreen/XCTestLog+RedGreen.h"; sourceTree = SOURCE_ROOT; };
+		7BD3F729180051C400E321E3 /* libRedGreenXC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRedGreenXC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD3F73A180051C500E321E3 /* RedGreenXCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedGreenXCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD3F742180051C500E321E3 /* RedGreenXCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RedGreenXCTests-Info.plist"; path = "RedGreenTests/RedGreenXCTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7BD3F746180051C500E321E3 /* RedGreenXCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RedGreenXCTests.m; path = RedGreenTests/RedGreenXCTests.m; sourceTree = SOURCE_ROOT; };
+		7BD3F74E180051FC00E321E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7BD3F7501800520100E321E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BD3F7521800521900E321E3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +111,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BD3F726180051C400E321E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD3F7531800521900E321E3 /* Cocoa.framework in Frameworks */,
+				7BD3F7511800520100E321E3 /* Foundation.framework in Frameworks */,
+				7BD3F74F180051FC00E321E3 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD3F737180051C500E321E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD3F7561800523400E321E3 /* Foundation.framework in Frameworks */,
+				7BD3F7551800522E00E321E3 /* XCTest.framework in Frameworks */,
+				7BD3F7541800522900E321E3 /* Cocoa.framework in Frameworks */,
+				7BD3F73F180051C500E321E3 /* libRedGreenXC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +140,8 @@
 			children = (
 				28A4827F1722CECB0091EB34 /* RedGreen */,
 				28A482941722CECB0091EB34 /* RedGreenTests */,
+				7BD3F730180051C500E321E3 /* RedGreenXC */,
+				7BD3F740180051C500E321E3 /* RedGreenXCTests */,
 				28A4827C1722CECB0091EB34 /* Frameworks */,
 				28A4827B1722CECB0091EB34 /* Products */,
 			);
@@ -97,6 +152,8 @@
 			children = (
 				28A4827A1722CECB0091EB34 /* libRedGreen.a */,
 				28A4828B1722CECB0091EB34 /* RedGreenTests.octest */,
+				7BD3F729180051C400E321E3 /* libRedGreenXC.a */,
+				7BD3F73A180051C500E321E3 /* RedGreenXCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,10 +161,12 @@
 		28A4827C1722CECB0091EB34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BD3F7521800521900E321E3 /* Cocoa.framework */,
+				7BD3F7501800520100E321E3 /* Foundation.framework */,
+				7BD3F74E180051FC00E321E3 /* XCTest.framework */,
 				28A482AA1722CFD00091EB34 /* UIKit.framework */,
 				28A4827D1722CECB0091EB34 /* Foundation.framework */,
 				28A4828C1722CECB0091EB34 /* SenTestingKit.framework */,
-				28A4828E1722CECB0091EB34 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,17 +176,8 @@
 			children = (
 				28A482A51722CF0D0091EB34 /* SenTestLog+RedGreen.h */,
 				28A482A61722CF0D0091EB34 /* SenTestLog+RedGreen.m */,
-				28A482801722CECB0091EB34 /* Supporting Files */,
 			);
 			path = RedGreen;
-			sourceTree = "<group>";
-		};
-		28A482801722CECB0091EB34 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				28A482811722CECB0091EB34 /* RedGreen-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		28A482941722CECB0091EB34 /* RedGreenTests */ = {
@@ -135,18 +185,27 @@
 			children = (
 				28A4829A1722CECB0091EB34 /* RedGreenTests.h */,
 				28A4829B1722CECB0091EB34 /* RedGreenTests.m */,
-				28A482951722CECB0091EB34 /* Supporting Files */,
+				28A482961722CECB0091EB34 /* RedGreenTests-Info.plist */,
 			);
 			path = RedGreenTests;
 			sourceTree = "<group>";
 		};
-		28A482951722CECB0091EB34 /* Supporting Files */ = {
+		7BD3F730180051C500E321E3 /* RedGreenXC */ = {
 			isa = PBXGroup;
 			children = (
-				28A482961722CECB0091EB34 /* RedGreenTests-Info.plist */,
-				28A482971722CECB0091EB34 /* InfoPlist.strings */,
+				7BD3F7241800516200E321E3 /* XCTestLog+RedGreen.h */,
+				7BD3F7221800515000E321E3 /* XCTestLog+RedGreen.m */,
 			);
-			name = "Supporting Files";
+			path = RedGreenXC;
+			sourceTree = "<group>";
+		};
+		7BD3F740180051C500E321E3 /* RedGreenXCTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BD3F746180051C500E321E3 /* RedGreenXCTests.m */,
+				7BD3F742180051C500E321E3 /* RedGreenXCTests-Info.plist */,
+			);
+			path = RedGreenXCTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +247,41 @@
 			productReference = 28A4828B1722CECB0091EB34 /* RedGreenTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		7BD3F728180051C400E321E3 /* RedGreenXC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD3F748180051C500E321E3 /* Build configuration list for PBXNativeTarget "RedGreenXC" */;
+			buildPhases = (
+				7BD3F725180051C400E321E3 /* Sources */,
+				7BD3F726180051C400E321E3 /* Frameworks */,
+				7BC195C418006A76000C1919 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedGreenXC;
+			productName = RedGreenXC;
+			productReference = 7BD3F729180051C400E321E3 /* libRedGreenXC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BD3F739180051C500E321E3 /* RedGreenXCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD3F74B180051C500E321E3 /* Build configuration list for PBXNativeTarget "RedGreenXCTests" */;
+			buildPhases = (
+				7BD3F736180051C500E321E3 /* Sources */,
+				7BD3F737180051C500E321E3 /* Frameworks */,
+				7BD3F738180051C500E321E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BD3F73E180051C500E321E3 /* PBXTargetDependency */,
+			);
+			name = RedGreenXCTests;
+			productName = RedGreenXCTests;
+			productReference = 7BD3F73A180051C500E321E3 /* RedGreenXCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +305,8 @@
 			targets = (
 				28A482791722CECB0091EB34 /* RedGreen */,
 				28A4828A1722CECB0091EB34 /* RedGreenTests */,
+				7BD3F728180051C400E321E3 /* RedGreenXC */,
+				7BD3F739180051C500E321E3 /* RedGreenXCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +316,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A482991722CECB0091EB34 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD3F738180051C500E321E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +361,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BD3F725180051C400E321E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD3F757180052A000E321E3 /* XCTestLog+RedGreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD3F736180051C500E321E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC195C618006AA2000C1919 /* RedGreenXCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -267,18 +385,12 @@
 			target = 28A482791722CECB0091EB34 /* RedGreen */;
 			targetProxy = 28A482911722CECB0091EB34 /* PBXContainerItemProxy */;
 		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		28A482971722CECB0091EB34 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28A482981722CECB0091EB34 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+		7BD3F73E180051C500E321E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD3F728180051C400E321E3 /* RedGreenXC */;
+			targetProxy = 7BD3F73D180051C500E321E3 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		28A4829D1722CECB0091EB34 /* Debug */ = {
@@ -342,8 +454,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RedGreen/RedGreen-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -358,8 +469,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RedGreen/RedGreen-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -373,8 +483,6 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RedGreen/RedGreen-Prefix.pch";
 				INFOPLIST_FILE = "RedGreenTests/RedGreenTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,12 +497,124 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RedGreen/RedGreen-Prefix.pch";
 				INFOPLIST_FILE = "RedGreenTests/RedGreenTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		7BD3F749180051C500E321E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7BD3F74A180051C500E321E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7BD3F74C180051C500E321E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "RedGreenTests/RedGreenXCTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7BD3F74D180051C500E321E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "RedGreenTests/RedGreenXCTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -424,6 +644,24 @@
 			buildConfigurations = (
 				28A482A31722CECB0091EB34 /* Debug */,
 				28A482A41722CECB0091EB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD3F748180051C500E321E3 /* Build configuration list for PBXNativeTarget "RedGreenXC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD3F749180051C500E321E3 /* Debug */,
+				7BD3F74A180051C500E321E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD3F74B180051C500E321E3 /* Build configuration list for PBXNativeTarget "RedGreenXCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD3F74C180051C500E321E3 /* Debug */,
+				7BD3F74D180051C500E321E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
